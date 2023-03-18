@@ -2,7 +2,7 @@ package personal.controllers;
 
 import personal.model.Play;
 import personal.model.Toys;
-
+import java.util.Random;
 import java.util.List;
 
 public class ToysControllers {
@@ -60,5 +60,13 @@ public class ToysControllers {
 
     public void deleteById(String delId) {
         play.deleteByID(delId);
+    }
+
+    public static <T> Toys getRandomElement(List<Toys> readList)
+    {
+
+        Random random = new Random();
+        int randomIndex = random.nextInt(readList.size());
+        return readList.get(randomIndex);
     }
 }

@@ -5,7 +5,6 @@ import personal.model.Play;
 import personal.model.PlayFile;
 import personal.views.ViewToys;
 
-import javax.swing.text.View;
 
 public class Main {
     public static void main(String[] args) {

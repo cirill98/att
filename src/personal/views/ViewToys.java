@@ -26,6 +26,12 @@ public class ViewToys {
                     toysControllers.saveToys(new Toys(name,count,chance));
                     break;
                 case PLAY:
+                    List<Toys> list=toysControllers.readList();
+                    Toys toys = toysControllers.getRandomElement(list);
+                    System.out.println("Вы выиграли!!!");
+
+                    System.out.println(toysControllers.getRandomElement(list));
+
                     break;
                 case LIST:
                     List<Toys> lst=toysControllers.readList();
