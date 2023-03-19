@@ -14,7 +14,7 @@ public class ViewToys {
     public void run(){
         Commands commands = Commands.NONE;
         while (true){
-            String command = prompt("Введите команду: ");
+            String command = prompt("Введите команду из перечисленных: CREATE, LIST, PLAY, EXIT: ");
             commands = Commands.valueOf(command.toUpperCase());
             if (commands == Commands.EXIT) return;
             try {
